@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0666C7231C22F4A2001AA068 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0666C7221C22F4A2001AA068 /* MapViewController.m */; };
+		067F52281C24590900FC538F /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 067F52271C24590900FC538F /* CustomAnnotation.m */; };
 		068BE7E41C2205D500EAC494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BE7E31C2205D500EAC494 /* main.m */; };
 		068BE7E71C2205D500EAC494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BE7E61C2205D500EAC494 /* AppDelegate.m */; };
 		068BE7EA1C2205D500EAC494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BE7E91C2205D500EAC494 /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		068BE7EF1C2205D500EAC494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068BE7EE1C2205D500EAC494 /* Images.xcassets */; };
 		068BE7F21C2205D500EAC494 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068BE7F01C2205D500EAC494 /* LaunchScreen.xib */; };
 		068BE7FE1C2205D500EAC494 /* MapDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BE7FD1C2205D500EAC494 /* MapDataTests.m */; };
+		068BE80C1C220C5100EAC494 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BE80B1C220C5100EAC494 /* DataViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0666C7211C22F4A2001AA068 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		0666C7221C22F4A2001AA068 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		067F52261C24590900FC538F /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAnnotation.h; path = ../CustomAnnotation.h; sourceTree = "<group>"; };
+		067F52271C24590900FC538F /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAnnotation.m; path = ../CustomAnnotation.m; sourceTree = "<group>"; };
 		068BE7DE1C2205D500EAC494 /* MapData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068BE7E21C2205D500EAC494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		068BE7E31C2205D500EAC494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,8 @@
 		068BE7F71C2205D500EAC494 /* MapDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		068BE7FC1C2205D500EAC494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		068BE7FD1C2205D500EAC494 /* MapDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDataTests.m; sourceTree = "<group>"; };
+		068BE80A1C220C5100EAC494 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		068BE80B1C220C5100EAC494 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +90,14 @@
 		068BE7E01C2205D500EAC494 /* MapData */ = {
 			isa = PBXGroup;
 			children = (
+				067F52261C24590900FC538F /* CustomAnnotation.h */,
+				067F52271C24590900FC538F /* CustomAnnotation.m */,
+				0666C7211C22F4A2001AA068 /* MapViewController.h */,
+				0666C7221C22F4A2001AA068 /* MapViewController.m */,
 				068BE7E51C2205D500EAC494 /* AppDelegate.h */,
 				068BE7E61C2205D500EAC494 /* AppDelegate.m */,
+				068BE80A1C220C5100EAC494 /* DataViewController.h */,
+				068BE80B1C220C5100EAC494 /* DataViewController.m */,
 				068BE7E81C2205D500EAC494 /* ViewController.h */,
 				068BE7E91C2205D500EAC494 /* ViewController.m */,
 				068BE7EB1C2205D500EAC494 /* Main.storyboard */,
@@ -163,11 +178,12 @@
 		068BE7D61C2205D500EAC494 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "takahiro ikeda";
 				TargetAttributes = {
 					068BE7DD1C2205D500EAC494 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ZFB934G7T9;
 					};
 					068BE7F61C2205D500EAC494 = {
 						CreatedOnToolsVersion = 6.4;
@@ -221,7 +237,10 @@
 			files = (
 				068BE7EA1C2205D500EAC494 /* ViewController.m in Sources */,
 				068BE7E71C2205D500EAC494 /* AppDelegate.m in Sources */,
+				0666C7231C22F4A2001AA068 /* MapViewController.m in Sources */,
+				067F52281C24590900FC538F /* CustomAnnotation.m in Sources */,
 				068BE7E41C2205D500EAC494 /* main.m in Sources */,
+				068BE80C1C220C5100EAC494 /* DataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +303,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,9 +367,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +381,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -367,16 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MapDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapData.app/MapData";
 			};
@@ -386,12 +412,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MapDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapData.app/MapData";
 			};
@@ -416,6 +440,7 @@
 				068BE8031C2205D500EAC494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		068BE8041C2205D500EAC494 /* Build configuration list for PBXNativeTarget "MapDataTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				068BE8061C2205D500EAC494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
