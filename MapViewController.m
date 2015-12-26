@@ -70,7 +70,7 @@
     // 地図の機能を有効化
     self.mapView.delegate = self;
     self.mapView.userTrackingMode = MKUserTrackingModeFollow;
-    self.mapView.mapType = MKMapTypeSatellite;
+    self.mapView.mapType = MKMapTypeSatelliteFlyover;//課題指定
     //調査内容　MKUserTrackingModeFollow　ユーザーの現在位置に応じてマップを更新する。
     
      NSLog(@"viewdidload呼び出し");
